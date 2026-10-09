@@ -97,6 +97,11 @@ function Header() {
             </StyledNavLink>
           </Grid>
           <Grid size={{ xs: 2.4 }}>
+            <StyledNavLink to="/atualizar">
+              <StyledNavText>AtualizarPessoa</StyledNavText>
+            </StyledNavLink>
+          </Grid>
+          <Grid size={{ xs: 2.4 }}>
             <StyledNavLink to="/">
               <StyledNavText>
                 <StyledButton onClick={Logout}>Logout</StyledButton>
@@ -141,6 +146,11 @@ function Header() {
           <StyledNavLink to="/listaProdutos">
             <StyledNavText>Lista Produtos</StyledNavText>
           </StyledNavLink>
+
+          <StyledNavLink to="/atualizar">
+            <StyledNavText>Atualizar Pessoa</StyledNavText>
+          </StyledNavLink>
+
           <StyledNavText>
             <StyledButton onClick={Logout}>Logout</StyledButton>
           </StyledNavText>
