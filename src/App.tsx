@@ -4,7 +4,7 @@ import {
   Route,
   Routes,
   Navigate,
-  Outlet
+  Outlet,
 } from "react-router-dom";
 
 import Cookies from "js-cookie";
@@ -17,6 +17,8 @@ import {
   CadastroP,
   ListP,
   CadastroI,
+  Atualizar,
+  Registration,
 } from "@/page";
 function App() {
   const SecureRoute = () => {
@@ -25,7 +27,7 @@ function App() {
       alert("Login necessario");
       return <Navigate to={"/"} replace />;
     }
-    return <Outlet />
+    return <Outlet />;
   };
   return (
     <>
@@ -37,7 +39,9 @@ function App() {
           <Route path="/cadastroI" element={<CadastroI />}>
             CadastroI
           </Route>
-
+          <Route path="/register" element={<Registration />}>
+            Registration
+          </Route>
 
           <Route element={<SecureRoute />}>
             <Route path="/home" element={<Home />}>
@@ -54,6 +58,9 @@ function App() {
               Cadastro
             </Route>
             <Route path="/listaProdutos" element={<ListP />}>
+              Cadastro
+            </Route>
+            <Route path="/atualizar" element={<Atualizar />}>
               Cadastro
             </Route>
           </Route>

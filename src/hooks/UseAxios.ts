@@ -83,8 +83,7 @@ console.log("HEADER:",token)
     } catch (error: any) {
      console.log("TOKEN:", Cookies.get("authorization"))
       setError(error.response?.status || 500);
-       
-    } finally {
+           } finally {
       setLoading(false);
     }
 
@@ -97,3 +96,49 @@ console.log("HEADER:",token)
   }, [endpoint])
   return { data, loading, error, UseGet };
 };
+
+
+
+export const RequestPut = <T,P>(endpoint: string) => {
+  const [data, setData] = useState<T | null>(null);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState(null);
+
+  const UsePut = async (value: P, config?: AxiosRequestConfig) => {
+    setData(null);
+    setLoading(true);
+    setError(null);
+
+const token = Cookies.get("authorization")
+ console.log("TOKEN ENVIADO:", token)
+console.log("TOKEN:", token)
+console.log("HEADER:",token)
+    try {
+      const response = await AxiosInstance({
+        ...config,
+         method: "PUT",
+         data:value,
+        url: endpoint,
+        headers:
+         { Authorization:token,
+          "Content-Type": "application/json", ...config?.headers }
+        
+      });
+      setData(response.data);
+      console.log(response.data)
+       
+    } catch (error: any) {
+     console.log("TOKEN:", Cookies.get("authorization"))
+      setError(error.response?.status || 500);
+           } finally {
+      setLoading(false);
+    }
+
+
+    
+  };
+
+  
+  return { data, loading, error, UsePut };
+};
+
