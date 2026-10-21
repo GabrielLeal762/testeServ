@@ -24,7 +24,9 @@ const ProfileSlice=createSlice({
         setMenssage:(
             state,
             action:PayloadAction<string>
-        )=>{state.menssage=action.payload}
+        )=>{state.menssage=action.payload},
+
+       
         
     }
 })

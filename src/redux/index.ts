@@ -2,12 +2,14 @@ import { configureStore } from "@reduxjs/toolkit";
 
 import CreateProfileReducer from "./slices/createProfile"
 import createPassReducer from "./pass/createPass"
+import createNameReducer from  "./Name/nameList"
 
 export const store=configureStore({
     
     reducer:{
       createProfile:CreateProfileReducer,
-      createPass:createPassReducer
+      createPass:createPassReducer,
+      nameList:createNameReducer
     }
 })
 

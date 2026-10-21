@@ -8,34 +8,19 @@ import {
 } from "@/Componentes";
 import { Box, Container, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
-import Cookies from "js-cookie";
-import { jwtDecode } from "jwt-decode";
-import { JWToken, ListUsers } from "@/types";
-import { RequestGet } from "@/hooks";
+
+import { useSelector } from "react-redux";
+
+import { RootState } from "@/redux";
 
 function Home() {
-  const { data } = RequestGet<ListUsers>("usuarios");
-
-  const token = Cookies.get("authorization");
-
-  let nomeU = "NomeUsuario";
-  if (token && data) {
-    const decoded = jwtDecode<JWToken>(token);
-
-    const usuarioEncontrado = data.usuarios.find(
-      (usuario) => usuario.email === decoded.email,
-    );
-    if (usuarioEncontrado) {
-      nomeU = usuarioEncontrado.nome;
-      console.log("Id", nomeU);
-    }
-  }
+  const { nome } = useSelector((state: RootState) => state.nameList);
 
   return (
     <>
       <Box>
         <Header />
-        <Banner mensagem={`Bem vindo ${nomeU}`} />
+        <Banner mensagem={`Bem vindo ${nome ?? "NomeUsuario"}`} />
 
         <Container maxWidth="lg">
           <Grid

@@ -17,7 +17,12 @@ import Rem from "@/utils/pxToRem";
 import Cookies from "js-cookie";
 import { jwtDecode } from "jwt-decode";
 
+import { useDispatch } from "react-redux";
+
+import { pushName } from "@/redux/Name/nameList";
+
 function Atualizar() {
+  const dispatch = useDispatch();
   const [check, setChecked] = useState(false);
   const inputs = [
     { type: "text", placeholder: "Nome" },
@@ -59,12 +64,19 @@ function Atualizar() {
 
   const HandleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    await UsePut({
+    const result = await UsePut({
       nome: String(formValues[0]),
       email: String(formValues[1]),
       password: String(formValues[2]),
       administrador: String(check),
     });
+    if (result?.success) {
+      dispatch(
+        pushName({
+          nome: String(formValues[0]),
+        }),
+      );
+    }
   };
 
   const HandleMensagem = (): menssage => {
