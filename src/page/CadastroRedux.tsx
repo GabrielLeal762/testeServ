@@ -12,6 +12,7 @@ import { Grid, Box, Container } from "@mui/material";
 import { useState } from "react";
 import Rem from "@/utils/pxToRem";
 import { CadastroUsuario, CadastroData } from "@/types";
+import { pushName } from "@/redux/Name/nameList";
 
 //REDUX
 
@@ -86,6 +87,7 @@ function Registration() {
     });
     console.log(data);
     if (result.success) {
+      dispatch(pushName({ nome: String(step1FormValue[0]) }));
       return navigate("/", { replace: true });
     } else {
       dispatch(setStateProfile({ email: "" }));
