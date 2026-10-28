@@ -39,13 +39,16 @@ function Home() {
                 flexDirection: "column",
               }}
             >
-              <StyledCard>
-                <StyledH2>Cadastrar Usuário</StyledH2>
-                <StyledH3>
+              <StyledCard className="cards">
+                <StyledH2 className="styledh">Cadastrar Usuário</StyledH2>
+                <StyledH3 className="styledh">
                   Funcionalidade de Cadastro de Usuários diretamente na Page
                 </StyledH3>
                 <Link to={"/cadastro"}>
-                  <StyledButton style={{ background: "#EF4444" }}>
+                  <StyledButton
+                    className="buttons"
+                    style={{ background: "#EF4444" }}
+                  >
                     Cadastrar
                   </StyledButton>
                 </Link>
@@ -61,13 +64,16 @@ function Home() {
                 flexDirection: "column",
               }}
             >
-              <StyledCard>
-                <StyledH2>Listar Usuários</StyledH2>
-                <StyledH3>
+              <StyledCard className="cards">
+                <StyledH2 className="styledh">Listar Usuários</StyledH2>
+                <StyledH3 className="styledh">
                   Funcionalidade de listagem de usuários que estão cadastrados
                 </StyledH3>
                 <Link to={"/listaUsuarios"}>
-                  <StyledButton style={{ background: "#F59E0B" }}>
+                  <StyledButton
+                    className="buttons"
+                    style={{ background: "#F59E0B" }}
+                  >
                     Listar
                   </StyledButton>
                 </Link>
@@ -84,13 +90,16 @@ function Home() {
                 flexDirection: "column",
               }}
             >
-              <StyledCard>
-                <StyledH2>Cadastrar Produtos</StyledH2>
-                <StyledH3>
+              <StyledCard className="cards">
+                <StyledH2 className="styledh">Cadastrar Produtos</StyledH2>
+                <StyledH3 className="styledh">
                   Funcionalidade de cadastro de produtos para ser utilizado.
                 </StyledH3>
                 <Link to={"/cadastroP"}>
-                  <StyledButton style={{ background: "#10B981" }}>
+                  <StyledButton
+                    className="buttons"
+                    style={{ background: "#10B981" }}
+                  >
                     Cadastrar
                   </StyledButton>
                 </Link>
@@ -107,13 +116,16 @@ function Home() {
                 flexDirection: "column",
               }}
             >
-              <StyledCard>
-                <StyledH2>Listar Produtos</StyledH2>
-                <StyledH3>
+              <StyledCard className="cards">
+                <StyledH2 className="styledh">Listar Produtos</StyledH2>
+                <StyledH3 className="styledh">
                   Funcionalidade de listagem de produtos que estão cadastrados.
                 </StyledH3>
                 <Link to={"/listaProdutos"}>
-                  <StyledButton style={{ background: "#3B82F6" }}>
+                  <StyledButton
+                    className="buttons"
+                    style={{ background: "#3B82F6" }}
+                  >
                     Listar
                   </StyledButton>
                 </Link>
