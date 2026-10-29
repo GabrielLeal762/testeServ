@@ -98,7 +98,7 @@ function Registration() {
     if (data !== null) {
       dispatch(setMenssage("Cadastro feito com sucesso"));
     }
-  }, [data]);
+  }, [dispatch, data]);
   const HandleMensage = (): menssage => {
     if (!error) {
       return { type: "success", comentario: "Cadastro feito com sucesso" };
@@ -187,9 +187,11 @@ function Registration() {
                         setChecked(e.target.checked);
                         return;
                       }
-                      email
-                        ? Handle2(index, (e.target as HTMLInputElement).value)
-                        : Handle1(index, (e.target as HTMLInputElement).value);
+                      if (email) {
+                        Handle2(index, (e.target as HTMLInputElement).value);
+                      } else {
+                        Handle1(index, (e.target as HTMLInputElement).value);
+                      }
                     },
                   }))}
                   label="Marque como administrador"

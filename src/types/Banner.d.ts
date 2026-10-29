@@ -1,6 +1,3 @@
-
-
-
-export interface BannerM{
-    mensagem:string
+export interface BannerM {
+  mensagem: string;
 }

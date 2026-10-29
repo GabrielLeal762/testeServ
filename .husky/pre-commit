@@ -1,0 +1,18 @@
+echo 'npm Commit test'
+
+#Prettier
+echo "Running prettier..."
+npm run format
+
+#Lint
+echo "Runnint test lint..."
+npm run lint
+
+#Test unit
+
+echo "Runnint test unit..."
+
+npm run test
+
+
+

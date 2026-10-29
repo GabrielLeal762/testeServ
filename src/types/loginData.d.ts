@@ -25,8 +25,7 @@ export interface CadastroProduto {
   quantidade: number;
 }
 
-
-export interface ListProducts{
-      quantidade:number,
-      produtos:CadastroProduto[]
+export interface ListProducts {
+  quantidade: number;
+  produtos: CadastroProduto[];
 }

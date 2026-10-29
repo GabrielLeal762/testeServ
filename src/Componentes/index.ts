@@ -7,5 +7,5 @@ export * from "./typegraphyes";
 export { default as Header } from "./Header";
 export * from "./CardComponente";
 export * from "./Background";
-export {default as Tabela} from "./TableComp"
-export * from "./StyledBackground"
+export { default as Tabela } from "./TableComp";
+export * from "./StyledBackground";
