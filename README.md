@@ -1,2 +1,1 @@
-
 Teste de responsividade,teste de Request(GET,POST,PUT E DELETE) e de API´S para desenvolvimento,tendo fluxos de rotas como login e logout,.Uso de Redux e controle de estados Globais,Checagem das funções e estilos por meio de testes autmotizados,uso dos testes unitarios para as checagens do mesmo.

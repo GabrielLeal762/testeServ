@@ -1,9 +1,6 @@
-
-
-export interface JWToken{
-
-    userId:number
-     email:string
-    exp:number
-    iat:number
+export interface JWToken {
+  userId: number;
+  email: string;
+  exp: number;
+  iat: number;
 }
