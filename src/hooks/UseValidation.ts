@@ -1,5 +1,5 @@
 import type { InputProps } from "@/types/Formulario";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 
 import {
@@ -14,66 +14,67 @@ export const UseValidation = (input: InputProps[]) => {
     input.map((inputs) => inputs.value || ""),
   );
 
-  const [valid, setValid] = useState<boolean>(false);
   const dispatch = useDispatch();
 
+  // Identifica o campo de senha
+  const passwordIndex = input.findIndex((value) => value.type === "password");
+
+  const passwordValue =
+    passwordIndex >= 0 ? String(formValues[passwordIndex] ?? "") : "";
+
+  // Validação da senha no Redux
   useEffect(() => {
-    const Validation = input.every((value, index) => {
-      const valor = String(formValues[index] ?? "");
+    if (passwordIndex === -1) return;
 
-      if (value.type === "email") {
-        return /\S+@\S+\.\S+/.test(valor);
-      }
+    const widthPass = passwordValue.length >= 8 && passwordValue.length <= 16;
 
-      if (value.type === "password") {
-        const widthPass = valor.length >= 8 && valor.length <= 16;
+    const upperCasePass = /[A-Z]/.test(passwordValue);
 
-        const upperCasePass = /[A-Z]/.test(valor);
+    const specialCaracterPass = /[!@#$%^&*(),.?":{}|<>]/.test(passwordValue);
 
-        const specialCaracterPass = /[!@#$%^&*(),.?":{}|<>]/.test(valor);
+    const numberPass = /\d/.test(passwordValue);
 
-        const numberPass = /\d/.test(valor);
+    dispatch(setQtdCaractere({ qtdCaractere: widthPass }));
+    dispatch(setUpperPass({ upperPass: upperCasePass }));
+    dispatch(
+      setSpecialCaractere({
+        specialCaractere: specialCaracterPass,
+      }),
+    );
+    dispatch(setNumberPass({ numberPass }));
+  }, [passwordValue, passwordIndex, dispatch]);
 
-        dispatch(
-          setQtdCaractere({
-            qtdCaractere: widthPass,
-          }),
-        );
+  // Validação dos campos
+  const valid = input.every((value, index) => {
+    const valor = String(formValues[index] ?? "");
 
-        dispatch(
-          setUpperPass({
-            upperPass: upperCasePass,
-          }),
-        );
+    if (value.type === "email") {
+      return /\S+@\S+\.\S+/.test(valor);
+    }
 
-        dispatch(
-          setSpecialCaractere({
-            specialCaractere: specialCaracterPass,
-          }),
-        );
+    if (value.type === "password") {
+      const widthPass = valor.length >= 8 && valor.length <= 16;
 
-        dispatch(
-          setNumberPass({
-            numberPass: numberPass,
-          }),
-        );
+      const upperCasePass = /[A-Z]/.test(valor);
 
-        return widthPass && upperCasePass && specialCaracterPass && numberPass;
-      }
+      const specialCaracterPass = /[!@#$%^&*(),.?":{}|<>]/.test(valor);
 
-      return true;
-    });
+      const numberPass = /\d/.test(valor);
 
-    setValid(Validation);
-  }, [formValues, input, dispatch]);
+      return widthPass && upperCasePass && specialCaracterPass && numberPass;
+    }
 
-  const HandleChange = (index: number, value: string) => {
+    return true;
+  });
+
+  // Atualiza os valores dos campos
+  const HandleChange = useCallback((index: number, value: string) => {
     setFormValues((prevValue) => {
       const newValue = [...prevValue];
       newValue[index] = value;
       return newValue;
     });
-  };
+  }, []);
 
   return {
     HandleChange,

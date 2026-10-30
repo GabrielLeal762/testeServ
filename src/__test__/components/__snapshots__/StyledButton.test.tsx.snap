@@ -1,5 +1,757 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`Verificando o component StyledButton > dark > Testando as classes do button 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-size: border-box;
+  height: 3.125rem;
+  padding: 0 1rem;
+  tansition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c0.primary {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.c0.primary:hover {
+  background-color: #60A5FA;
+}
+
+.c0.alert {
+  color: #FFFFFF;
+  background-color: #EF4444;
+  cursor: pointer;
+}
+
+.c0.alert:hover {
+  background-color: #DC2626;
+}
+
+.c0.disabled {
+  color: #6B7280;
+  background-color: #1F2937;
+}
+
+<button
+    class="c0 alert"
+  />
+</DocumentFragment>
+`;
+
+exports[`Verificando o component StyledButton > dark > Testando se o button existe nos themas 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-size: border-box;
+  height: 3.125rem;
+  padding: 0 1rem;
+  tansition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c0.primary {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.c0.primary:hover {
+  background-color: #60A5FA;
+}
+
+.c0.alert {
+  color: #FFFFFF;
+  background-color: #EF4444;
+  cursor: pointer;
+}
+
+.c0.alert:hover {
+  background-color: #DC2626;
+}
+
+.c0.disabled {
+  color: #6B7280;
+  background-color: #1F2937;
+}
+
+<button
+    class="c0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Verificando o component StyledButton > dark > Testando se o button existe nos themas 2`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-size: border-box;
+  height: 3.125rem;
+  padding: 0 1rem;
+  tansition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c0.primary {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.c0.primary:hover {
+  background-color: #60A5FA;
+}
+
+.c0.alert {
+  color: #FFFFFF;
+  background-color: #EF4444;
+  cursor: pointer;
+}
+
+.c0.alert:hover {
+  background-color: #DC2626;
+}
+
+.c0.disabled {
+  color: #6B7280;
+  background-color: #1F2937;
+}
+
+<button
+    class="c0 disabled"
+  />
+</DocumentFragment>
+`;
+
+exports[`Verificando o component StyledButton > dark > Testando se o button existe nos themas 3`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-size: border-box;
+  height: 3.125rem;
+  padding: 0 1rem;
+  tansition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c0.primary {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.c0.primary:hover {
+  background-color: #60A5FA;
+}
+
+.c0.alert {
+  color: #FFFFFF;
+  background-color: #EF4444;
+  cursor: pointer;
+}
+
+.c0.alert:hover {
+  background-color: #DC2626;
+}
+
+.c0.disabled {
+  color: #6B7280;
+  background-color: #1F2937;
+}
+
+<button
+    class="c0 primary"
+  />
+</DocumentFragment>
+`;
+
+exports[`Verificando o component StyledButton > light > Testando as classes do button 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-size: border-box;
+  height: 3.125rem;
+  padding: 0 1rem;
+  tansition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c0.primary {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.c0.primary:hover {
+  background-color: #60A5FA;
+}
+
+.c0.alert {
+  color: #FFFFFF;
+  background-color: #EF4444;
+  cursor: pointer;
+}
+
+.c0.alert:hover {
+  background-color: #DC2626;
+}
+
+.c0.disabled {
+  color: #6B7280;
+  background-color: #1F2937;
+}
+
+<button
+    class="c0 alert"
+  />
+</DocumentFragment>
+`;
+
+exports[`Verificando o component StyledButton > light > Testando se o button existe nos themas 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-size: border-box;
+  height: 3.125rem;
+  padding: 0 1rem;
+  tansition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c0.primary {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.c0.primary:hover {
+  background-color: #60A5FA;
+}
+
+.c0.alert {
+  color: #FFFFFF;
+  background-color: #EF4444;
+  cursor: pointer;
+}
+
+.c0.alert:hover {
+  background-color: #DC2626;
+}
+
+.c0.disabled {
+  color: #6B7280;
+  background-color: #1F2937;
+}
+
+<button
+    class="c0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Verificando o component StyledButton > light > Testando se o button existe nos themas 2`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-size: border-box;
+  height: 3.125rem;
+  padding: 0 1rem;
+  tansition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c0.primary {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.c0.primary:hover {
+  background-color: #60A5FA;
+}
+
+.c0.alert {
+  color: #FFFFFF;
+  background-color: #EF4444;
+  cursor: pointer;
+}
+
+.c0.alert:hover {
+  background-color: #DC2626;
+}
+
+.c0.disabled {
+  color: #6B7280;
+  background-color: #1F2937;
+}
+
+<button
+    class="c0 disabled"
+  />
+</DocumentFragment>
+`;
+
+exports[`Verificando o component StyledButton > light > Testando se o button existe nos themas 3`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-size: border-box;
+  height: 3.125rem;
+  padding: 0 1rem;
+  tansition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c0.primary {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.c0.primary:hover {
+  background-color: #60A5FA;
+}
+
+.c0.alert {
+  color: #FFFFFF;
+  background-color: #EF4444;
+  cursor: pointer;
+}
+
+.c0.alert:hover {
+  background-color: #DC2626;
+}
+
+.c0.disabled {
+  color: #6B7280;
+  background-color: #1F2937;
+}
+
+<button
+    class="c0 primary"
+  />
+</DocumentFragment>
+`;
+
+exports[`Verificando o component StyledButton lightTheme > dark > Testando as classes do button 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-size: border-box;
+  height: 3.125rem;
+  padding: 0 1rem;
+  tansition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c0.primary {
+  background-color: #0C70F2;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.c0.primary:hover {
+  background-color: #0061DE;
+}
+
+.c0.alert {
+  color: #FFF;
+  background-color: #E80000;
+  cursor: pointer;
+}
+
+.c0.alert:hover {
+  background-color: #D80000;
+}
+
+.c0.disabled {
+  color: #666666;
+  background-color: #CCCCCC;
+}
+
+<button
+    class="c0 alert"
+  />
+</DocumentFragment>
+`;
+
+exports[`Verificando o component StyledButton lightTheme > dark > Testando se o button existe nos themas 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-size: border-box;
+  height: 3.125rem;
+  padding: 0 1rem;
+  tansition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c0.primary {
+  background-color: #0C70F2;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.c0.primary:hover {
+  background-color: #0061DE;
+}
+
+.c0.alert {
+  color: #FFF;
+  background-color: #E80000;
+  cursor: pointer;
+}
+
+.c0.alert:hover {
+  background-color: #D80000;
+}
+
+.c0.disabled {
+  color: #666666;
+  background-color: #CCCCCC;
+}
+
+<button
+    class="c0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Verificando o component StyledButton lightTheme > dark > Testando se o button existe nos themas 2`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-size: border-box;
+  height: 3.125rem;
+  padding: 0 1rem;
+  tansition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c0.primary {
+  background-color: #0C70F2;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.c0.primary:hover {
+  background-color: #0061DE;
+}
+
+.c0.alert {
+  color: #FFF;
+  background-color: #E80000;
+  cursor: pointer;
+}
+
+.c0.alert:hover {
+  background-color: #D80000;
+}
+
+.c0.disabled {
+  color: #666666;
+  background-color: #CCCCCC;
+}
+
+<button
+    class="c0 disabled"
+  />
+</DocumentFragment>
+`;
+
+exports[`Verificando o component StyledButton lightTheme > dark > Testando se o button existe nos themas 3`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-size: border-box;
+  height: 3.125rem;
+  padding: 0 1rem;
+  tansition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c0.primary {
+  background-color: #0C70F2;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.c0.primary:hover {
+  background-color: #0061DE;
+}
+
+.c0.alert {
+  color: #FFF;
+  background-color: #E80000;
+  cursor: pointer;
+}
+
+.c0.alert:hover {
+  background-color: #D80000;
+}
+
+.c0.disabled {
+  color: #666666;
+  background-color: #CCCCCC;
+}
+
+<button
+    class="c0 primary"
+  />
+</DocumentFragment>
+`;
+
+exports[`Verificando o component StyledButton lightTheme > light > Testando as classes do button 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-size: border-box;
+  height: 3.125rem;
+  padding: 0 1rem;
+  tansition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c0.primary {
+  background-color: #0C70F2;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.c0.primary:hover {
+  background-color: #0061DE;
+}
+
+.c0.alert {
+  color: #FFF;
+  background-color: #E80000;
+  cursor: pointer;
+}
+
+.c0.alert:hover {
+  background-color: #D80000;
+}
+
+.c0.disabled {
+  color: #666666;
+  background-color: #CCCCCC;
+}
+
+<button
+    class="c0 alert"
+  />
+</DocumentFragment>
+`;
+
+exports[`Verificando o component StyledButton lightTheme > light > Testando se o button existe nos themas 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-size: border-box;
+  height: 3.125rem;
+  padding: 0 1rem;
+  tansition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c0.primary {
+  background-color: #0C70F2;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.c0.primary:hover {
+  background-color: #0061DE;
+}
+
+.c0.alert {
+  color: #FFF;
+  background-color: #E80000;
+  cursor: pointer;
+}
+
+.c0.alert:hover {
+  background-color: #D80000;
+}
+
+.c0.disabled {
+  color: #666666;
+  background-color: #CCCCCC;
+}
+
+<button
+    class="c0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Verificando o component StyledButton lightTheme > light > Testando se o button existe nos themas 2`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-size: border-box;
+  height: 3.125rem;
+  padding: 0 1rem;
+  tansition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c0.primary {
+  background-color: #0C70F2;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.c0.primary:hover {
+  background-color: #0061DE;
+}
+
+.c0.alert {
+  color: #FFF;
+  background-color: #E80000;
+  cursor: pointer;
+}
+
+.c0.alert:hover {
+  background-color: #D80000;
+}
+
+.c0.disabled {
+  color: #666666;
+  background-color: #CCCCCC;
+}
+
+<button
+    class="c0 disabled"
+  />
+</DocumentFragment>
+`;
+
+exports[`Verificando o component StyledButton lightTheme > light > Testando se o button existe nos themas 3`] = `
+<DocumentFragment>
+  .c0 {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  box-size: border-box;
+  height: 3.125rem;
+  padding: 0 1rem;
+  tansition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c0.primary {
+  background-color: #0C70F2;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.c0.primary:hover {
+  background-color: #0061DE;
+}
+
+.c0.alert {
+  color: #FFF;
+  background-color: #E80000;
+  cursor: pointer;
+}
+
+.c0.alert:hover {
+  background-color: #D80000;
+}
+
+.c0.disabled {
+  color: #666666;
+  background-color: #CCCCCC;
+}
+
+<button
+    class="c0 primary"
+  />
+</DocumentFragment>
+`;
+
 exports[`Verificar estilos do Button darkTheme > dark > Verificar as classes do button darkTheme 1`] = `
 <DocumentFragment>
   .c0 {

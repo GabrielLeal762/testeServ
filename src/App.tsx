@@ -17,7 +17,6 @@ import {
   ListUsuarios,
   CadastroP,
   ListP,
-  CadastroI,
   Atualizar,
   Registration,
 } from "@/page";
@@ -39,8 +38,6 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
-
-        <Route path="/cadastroI" element={<CadastroI />} />
 
         <Route path="/register" element={<Registration />} />
 

@@ -42,8 +42,10 @@ function Login() {
 
   // Preenche o email vindo do Redux
   useEffect(() => {
-    HandleChange(0, email);
-  }, [email, HandleChange]);
+    if (email) {
+      HandleChange(0, email);
+    }
+  }, [email]);
 
   // Envia os dados do login
   const HandleSubmit = async (e: React.FormEvent) => {
