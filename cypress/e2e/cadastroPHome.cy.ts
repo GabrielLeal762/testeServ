@@ -4,7 +4,9 @@ describe("Teste de cadastro de pessoa na Home Page", () => {
     cy.visit("http://localhost:5173/home");
     cy.visit("http://localhost:5173/cadastro");
   });
-  it("passes", () => {
+
+  it("Testtando os passes do cadastro", () => {
+    cy.get("form").should("be.visible");
     cy.get("input[type='text'").type("Gabriel Leal");
     cy.get("input[type='email'").type("gabriel124@gmail.com");
     cy.get("input[type='password'").type("123Doidomaluco.");
@@ -13,14 +15,14 @@ describe("Teste de cadastro de pessoa na Home Page", () => {
   });
 });
 
-describe("Teste de cadastro de pessoa na Home Page", () => {
+describe("Testando os valores de Já cadastrados do cadastro", () => {
   beforeEach(() => {
     cy.login("gabriel124@gmail.com", "123Doidomaluco.");
     cy.visit("http://localhost:5173/home");
-
     cy.visit("http://localhost:5173/cadastro");
   });
-  it("passes", () => {
+  it("passes até o valor já cadastrado", () => {
+    cy.get("form").should("be.visible");
     cy.get("input[type='text'").type("Gabriel Leal");
     cy.get("input[type='email'").type("gabriel124@gmail.com");
     cy.get("input[type='password'").type("123Doidomaluco.");

@@ -23,18 +23,18 @@ const listTheme = [
   },
 ];
 
-describe("Logo,test", () => {
-  const renderComponent = (theme: Theme, width?: number, height?: number) =>
+describe("Testando os styled Logo se ta tudo certo", () => {
+  const renderComponent = (theme: Theme, width?: number, heigth?: number) =>
     render(
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <StyledLogo width={width ?? 32} height={height ?? 32} />
+        <StyledLogo width={width ?? 32} height={heigth ?? 32} />
       </ThemeProvider>,
     );
 
   listTheme.forEach(({ name, theme }) => {
     describe(`${name}`, () => {
-      it("Verificando o screen do logo", () => {
+      it("Testando os valores do styledLogo", () => {
         const { container } = renderComponent({ theme, width: 32, height: 32 });
         expect(container.firstChild).toBeInTheDocument();
         expect(container.firstChild).toHaveStyleRule(

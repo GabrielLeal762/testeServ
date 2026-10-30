@@ -21,8 +21,8 @@ const listTheme = [
   },
 ];
 
-describe("Verificar estilos do Button darkTheme", () => {
-  const RenderComponet = (className?: string) =>
+describe("Verificando o component StyledButton", () => {
+  const renderComponent = (className?: string) =>
     render(
       <ThemeProvider theme={darkTheme}>
         <GlobalStyle />
@@ -32,29 +32,28 @@ describe("Verificar estilos do Button darkTheme", () => {
 
   listTheme.forEach(({ name }) => {
     describe(`${name}`, () => {
-      it("Verificar as classes do button darkTheme", () => {
-        const { asFragment } = RenderComponet();
+      it("Testando se o button existe nos themas", () => {
+        const { asFragment } = renderComponent();
         expect(asFragment()).toMatchSnapshot();
       });
-
-      it("Verificação das  classes Alert", () => {
-        const { asFragment } = RenderComponet("alert");
+      it("Testando as classes do button", () => {
+        const { asFragment } = renderComponent("alert");
         expect(asFragment()).toMatchSnapshot();
       });
-      it("Verificação das  classes disabled", () => {
-        const { asFragment } = RenderComponet("disabled");
+      it("Testando se o button existe nos themas", () => {
+        const { asFragment } = renderComponent("disabled");
         expect(asFragment()).toMatchSnapshot();
       });
-      it("Verificação das  classes primary", () => {
-        const { asFragment } = RenderComponet("primary");
+      it("Testando se o button existe nos themas", () => {
+        const { asFragment } = renderComponent("primary");
         expect(asFragment()).toMatchSnapshot();
       });
     });
   });
 });
 
-describe("Verificar estilos do Button lightTheme", () => {
-  const RenderComponet = (className?: string) =>
+describe("Verificando o component StyledButton lightTheme", () => {
+  const renderComponent = (className?: string) =>
     render(
       <ThemeProvider theme={lighThemes}>
         <GlobalStyle />
@@ -63,22 +62,21 @@ describe("Verificar estilos do Button lightTheme", () => {
     );
 
   listTheme.forEach(({ name }) => {
-    describe(`${name},Light`, () => {
-      it("Verificar as classes do button lightTheme", () => {
-        const { asFragment } = RenderComponet();
+    describe(`${name}`, () => {
+      it("Testando se o button existe nos themas", () => {
+        const { asFragment } = renderComponent();
         expect(asFragment()).toMatchSnapshot();
       });
-
-      it("Verificação das  classes Alert", () => {
-        const { asFragment } = RenderComponet("alert");
+      it("Testando as classes do button", () => {
+        const { asFragment } = renderComponent("alert");
         expect(asFragment()).toMatchSnapshot();
       });
-      it("Verificação das  classes disabled", () => {
-        const { asFragment } = RenderComponet("disabled");
+      it("Testando se o button existe nos themas", () => {
+        const { asFragment } = renderComponent("disabled");
         expect(asFragment()).toMatchSnapshot();
       });
-      it("Verificação das  classes primary", () => {
-        const { asFragment } = RenderComponet("primary");
+      it("Testando se o button existe nos themas", () => {
+        const { asFragment } = renderComponent("primary");
         expect(asFragment()).toMatchSnapshot();
       });
     });
